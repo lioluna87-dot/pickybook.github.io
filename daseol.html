@@ -87,12 +87,7 @@
     margin-top: 10px;
   }
 
-  @media (max-width: 768px) {
-    .container { grid-template-columns: 1fr; }
-    .footer-card { grid-column: span 1; }
-  }
-
- /* 언어 전환 버튼 스타일 */
+  /* 언어 전환 버튼 스타일 */
   .lang-switch-wrapper {
     position: fixed;
     top: 20px;
@@ -119,14 +114,20 @@
     color: #ffffff;
     border-color: #1f2937;
   }
+
+  @media (max-width: 768px) {
+    .container { grid-template-columns: 1fr; }
+    .footer-card { grid-column: span 1; }
+    .lang-switch-wrapper { top: 12px; right: 12px; }
+  }
 </style>
 </head>
 <body>
 
- <div class="lang-switch-wrapper">
+<div class="lang-switch-wrapper">
   <a href="daseolen.html" class="lang-btn">🌐 EN</a>
 </div>
- 
+
 <h1 class="header-title">웹소설 라인업</h1>
 
 <div class="container">
