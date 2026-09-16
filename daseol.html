@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>로맨스 & 로맨스 판타지 웹소설 전체 라인업</title>
+<title>다설 웹소설 전체 라인업 / Daseol Web Novel Lineup</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { 
@@ -105,7 +105,7 @@
     border-radius: 20px;
     font-size: 13px;
     font-weight: 700;
-    text-decoration: none;
+    cursor: pointer;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     transition: all 0.2s ease;
   }
@@ -114,6 +114,18 @@
     color: #ffffff;
     border-color: #1f2937;
   }
+
+  /* 언어 숨김 제어 */
+  .lang-en { display: none; }
+  body.en-mode .lang-ko { display: none; }
+  body.en-mode .lang-en { display: inline; }
+  body.en-mode div.lang-en, 
+  body.en-mode p.lang-en, 
+  body.en-mode span.lang-en, 
+  body.en-mode h1.lang-en, 
+  body.en-mode h2.lang-en, 
+  body.en-mode a.lang-en { display: block; }
+  body.en-mode span.genre-tag.lang-en { display: inline-block; }
 
   @media (max-width: 768px) {
     .container { grid-template-columns: 1fr; }
@@ -125,10 +137,14 @@
 <body>
 
 <div class="lang-switch-wrapper">
-  <a href="daseolen.html" class="lang-btn">🌐 EN</a>
+  <button id="langToggleBtn" class="lang-btn" onclick="toggleLanguage()">
+    <span class="lang-ko">🌐 EN</span>
+    <span class="lang-en">🌐 한국어</span>
+  </button>
 </div>
 
-<h1 class="header-title">다설 웹소설 라인업</h1>
+<h1 class="header-title lang-ko">다설 웹소설 라인업</h1>
+<h1 class="header-title lang-en">Daseol Web Novel Lineup</h1>
 
 <div class="container">
 
@@ -137,19 +153,28 @@
     <div class="card-top">
       <img src="당신은-불장난일-뿐_최종파일_3.jpg" class="cover-img" alt="당신은 불장난일 뿐">
       <div class="content-body">
-        <h2 class="title">1. 당신은 불장난일 뿐</h2>
-        <span class="author">작가: 새뉴</span>
+        <h2 class="title lang-ko">1. 당신은 불장난일 뿐</h2>
+        <h2 class="title lang-en">1. You're Just Playing with Fire</h2>
+        <span class="author lang-ko">작가: 새뉴</span>
+        <span class="author lang-en">Author: Saenew</span>
         <div class="meta-line">
-          <span class="genre-tag">서양풍 로판 / 판타지 로맨스</span>
-          <span>구성: 총 8권 (완결)</span>
+          <span class="genre-tag lang-ko">서양풍 로판 / 판타지 로맨스</span>
+          <span class="genre-tag lang-en">Western Fantasy Romance / Fantasy Romance</span>
+          <span class="lang-ko">구성: 총 8권 (완결)</span>
+          <span class="lang-en">Volumes: 8 Volumes (Completed)</span>
         </div>
       </div>
     </div>
-    <div class="note">★ 특이사항: 2024 리디북스 로맨스판타지 단행본 신인상</div>
-    <div class="synopsis">
+    <div class="note lang-ko">★ 특이사항: 2024 리디북스 로맨스판타지 단행본 신인상</div>
+    <div class="note lang-en">★ Special Note: 2024 Ridi Books Fantasy Romance Novel Rookie Award Winner</div>
+    <div class="synopsis lang-ko">
       부모님의 죽음 이후 선대 공작의 후원을 받아 화가로서의 삶을 꿈꾸던 클레어. 하지만 자신을 아버지의 정부라 오해하고 조롱했던 오만한 후원자의 아들이 5년 만에 나타나 그녀를 자신의 정부로 만들려 한다.
     </div>
-    <a href="https://series.naver.com/novel/detail.series?productNo=9414169" target="_blank" class="btn-link">네이버 시리즈에서 보기</a>
+    <div class="synopsis lang-en">
+      After her parents' death, Claire dreamed of living as a painter under the patronage of the former Duke. However, five years later, the arrogant son of her patron—who mocked and misunderstood her as his father's mistress—reappears, determined to make her his own mistress.
+    </div>
+    <a href="https://series.naver.com/novel/detail.series?productNo=9414169" target="_blank" class="btn-link lang-ko">네이버 시리즈에서 보기</a>
+    <a href="https://series.naver.com/novel/detail.series?productNo=9414169" target="_blank" class="btn-link lang-en">View on Naver Series</a>
   </div>
 
   <!-- 2번 -->
@@ -157,18 +182,26 @@
     <div class="card-top">
       <img src="5482000058_org.jpg" class="cover-img" alt="사생아 엑스트라의 생존 방식">
       <div class="content-body">
-        <h2 class="title">2. 사생아 엑스트라의 생존 방식</h2>
-        <span class="author">작가: 때시비우</span>
+        <h2 class="title lang-ko">2. 사생아 엑스트라의 생존 방식</h2>
+        <h2 class="title lang-en">2. How a Bastard Extra Survives</h2>
+        <span class="author lang-ko">작가: 때시비우</span>
+        <span class="author lang-en">Author: Tteshibiu</span>
         <div class="meta-line">
-          <span class="genre-tag">로판 / 서양풍 (빙의물, 구원물, 능력녀)</span>
-          <span>구성: 총 9권 (완결)</span>
+          <span class="genre-tag lang-ko">로판 / 서양풍 (빙의물, 구원물, 능력녀)</span>
+          <span class="genre-tag lang-en">Romance Fantasy / Western (Transmigration, Salvation, Capable FL)</span>
+          <span class="lang-ko">구성: 총 9권 (완결)</span>
+          <span class="lang-en">Volumes: 9 Volumes (Completed)</span>
         </div>
       </div>
     </div>
-    <div class="synopsis">
+    <div class="synopsis lang-ko">
       회귀한 주인공이 황후가 되는 로맨스 소설 &lt;루테미아의 연인&gt; 속 엑스트라의 몸에 빙의하게 된다. 그러나 살아남기도 바쁜 와중에 원작의 악역으로부터 주인공 루테미아에게 독을 먹이라는 강요를 받게 되면서, 비틀리는 원작의 흐름 속에서 살아남기 위해 자신만의 생존 방식을 모색해 나가는 이야기다.
     </div>
-    <a href="https://ridibooks.com/books/5482000058" target="_blank" class="btn-link">리디북스에서 보기</a>
+    <div class="synopsis lang-en">
+      The protagonist transmigrates into the body of an extra in &lt;Lutemia's Lover&gt;, a romance novel where a regressed heroine becomes empress. While struggling just to stay alive, she is coerced by the original story's villain to poison Lutemia. To survive amid the twisting plot, she must navigate her own unique path of survival.
+    </div>
+    <a href="https://ridibooks.com/books/5482000058" target="_blank" class="btn-link lang-ko">리디북스에서 보기</a>
+    <a href="https://ridibooks.com/books/5482000058" target="_blank" class="btn-link lang-en">View on Ridi Books</a>
   </div>
 
   <!-- 3번 -->
@@ -176,18 +209,26 @@
     <div class="card-top">
       <img src="5616886.jpg" class="cover-img" alt="재결합이란 미친 짓">
       <div class="content-body">
-        <h2 class="title">3. 재결합이란 미친 짓</h2>
-        <span class="author">작가: 새뉴</span>
+        <h2 class="title lang-ko">3. 재결합이란 미친 짓</h2>
+        <h2 class="title lang-en">3. Reunion Is Madness</h2>
+        <span class="author lang-ko">작가: 새뉴</span>
+        <span class="author lang-en">Author: Saenew</span>
         <div class="meta-line">
-          <span class="genre-tag">서양풍 로판 / 판타지 로맨스</span>
-          <span>구성: 총 5권 (완결)</span>
+          <span class="genre-tag lang-ko">서양풍 로판 / 판타지 로맨스</span>
+          <span class="genre-tag lang-en">Western Fantasy Romance / Fantasy Romance</span>
+          <span class="lang-ko">구성: 총 5권 (완결)</span>
+          <span class="lang-en">Volumes: 5 Volumes (Completed)</span>
         </div>
       </div>
     </div>
-    <div class="synopsis">
+    <div class="synopsis lang-ko">
       헤어진 연인끼리의 금기, '절대로 몸을 섞지 말 것'. 온몸이 돌처럼 굳어가는 '네임' 저주에 걸린 전 연인과 재회하면서 벌어지는 로맨스 판타지.
     </div>
-    <a href="https://ridibooks.com/books/5482001321" target="_blank" class="btn-link">리디북스에서 보기</a>
+    <div class="synopsis lang-en">
+      The taboo between ex-lovers: 'Never sleep together.' A romance fantasy unfolding when she reunites with her ex-lover, who is cursed with the 'Name' curse that turns his entire body into stone.
+    </div>
+    <a href="https://ridibooks.com/books/5482001321" target="_blank" class="btn-link lang-ko">리디북스에서 보기</a>
+    <a href="https://ridibooks.com/books/5482001321" target="_blank" class="btn-link lang-en">View on Ridi Books</a>
   </div>
 
   <!-- 4번 -->
@@ -195,18 +236,26 @@
     <div class="card-top">
       <img src="KakaoTalk_20260916_192606510_04.jpg" class="cover-img" alt="사랑의 마법약을 해독하는 방법">
       <div class="content-body">
-        <h2 class="title">4. 사랑의 마법약을 해독하는 방법</h2>
-        <span class="author">작가: 가온나라빛</span>
+        <h2 class="title lang-ko">4. 사랑의 마법약을 해독하는 방법</h2>
+        <h2 class="title lang-en">4. How to Neutralize a Love Potion</h2>
+        <span class="author lang-ko">작가: 가온나라빛</span>
+        <span class="author lang-en">Author: Gaonnarabit</span>
         <div class="meta-line">
-          <span class="genre-tag">서양풍 / 판타지 로맨스 (궁정로맨스, 오해, 대형견남, 철벽녀)</span>
-          <span>구성: 총 5권 (완결)</span>
+          <span class="genre-tag lang-ko">서양풍 / 판타지 로맨스 (궁정로맨스, 오해, 대형견남, 철벽녀)</span>
+          <span class="genre-tag lang-en">Western / Fantasy Romance (Court Romance, Misunderstanding, Devoted ML, Cold FL)</span>
+          <span class="lang-ko">구성: 총 5권 (완결)</span>
+          <span class="lang-en">Volumes: 5 Volumes (Completed)</span>
         </div>
       </div>
     </div>
-    <div class="synopsis">
+    <div class="synopsis lang-ko">
       가난한 백작가이자 제국 유일의 상급 정령술사 세르이라 벤투스는 원래 다른 사람에게 먹이려던 사랑의 마법약을 실수로 제국의 냉혈한 대공 하벨 프레치아에게 먹이게 된다. 당황한 세르이라가 해독제를 건네주며 수습하려 하지만, 해독제를 마시고도 오히려 그녀를 향한 집착과 애정이 더욱 깊어진 하벨이 직진 로맨스를 펼치며 벌어지는 달달하고 아슬아슬한 오해 로맨스.
     </div>
-    <a href="https://series.naver.com/novel/detail.series?productNo=6848210" target="_blank" class="btn-link">네이버 시리즈에서 보기</a>
+    <div class="synopsis lang-en">
+      Serira Ventus, an impoverished count's daughter and the empire's sole high-level elementalist, accidentally gives a love potion meant for someone else to Havel Prechia, the cold-blooded Grand Duke. A panicked Serira attempts to fix things by handing him an antidote, but even after drinking it, Havel's obsession and affection only deepen, sparking a sweet yet precarious romance of misunderstandings.
+    </div>
+    <a href="https://series.naver.com/novel/detail.series?productNo=6848210" target="_blank" class="btn-link lang-ko">네이버 시리즈에서 보기</a>
+    <a href="https://series.naver.com/novel/detail.series?productNo=6848210" target="_blank" class="btn-link lang-en">View on Naver Series</a>
   </div>
 
   <!-- 5번 -->
@@ -214,18 +263,26 @@
     <div class="card-top">
       <img src="KakaoTalk_20260916_192606510_06.jpg" class="cover-img" alt="원수와의 복종 계약">
       <div class="content-body">
-        <h2 class="title">5. 원수와의 복종 계약</h2>
-        <span class="author">작가: 홍유디</span>
+        <h2 class="title lang-ko">5. 원수와의 복종 계약</h2>
+        <h2 class="title lang-en">5. Submission Contract with the Enemy</h2>
+        <span class="author lang-ko">작가: 홍유디</span>
+        <span class="author lang-en">Author: Hong Yu-di</span>
         <div class="meta-line">
-          <span class="genre-tag">판타지물 / 로판 (서양풍, 군부물, 구원물)</span>
-          <span>구성: 총 4권 (완결)</span>
+          <span class="genre-tag lang-ko">판타지물 / 로판 (서양풍, 군부물, 구원물)</span>
+          <span class="genre-tag lang-en">Fantasy / Romance Fantasy (Western, Military, Salvation)</span>
+          <span class="lang-ko">구성: 총 4권 (완결)</span>
+          <span class="lang-en">Volumes: 4 Volumes (Completed)</span>
         </div>
       </div>
     </div>
-    <div class="synopsis">
+    <div class="synopsis lang-ko">
       어릴 적 동생을 잃고 카르타군을 향한 복수만을 위해 살아온 이중 능력 각성자 리테는 복수의 대상인 카르타군의 장교 아스터 클라우드와 적으로 마주한다. 오직 복수를 위해 타인의 목숨까지 빼앗기로 결심하지만, 적으로 만나 죽일 듯 증오하던 아스터가 결국 자신에게 마지막 희망이자 구원이었음을 깨달으며 서로에게 치명적으로 빠져들게 된다.
     </div>
-    <a href="https://series.naver.com/novel/detail.series?productNo=8736264" target="_blank" class="btn-link">네이버 시리즈에서 보기</a>
+    <div class="synopsis lang-en">
+      Lithe, a dual-ability awakener who lost her younger sibling in her youth and lived solely for revenge against the Karta army, confronts her enemy, Officer Aster Cloud. Though determined to take lives for the sake of vengeance, she gradually realizes that Aster—the man she hated to the point of killing—was actually her last hope and salvation, drawing them both into a fatally deep passion.
+    </div>
+    <a href="https://series.naver.com/novel/detail.series?productNo=8736264" target="_blank" class="btn-link lang-ko">네이버 시리즈에서 보기</a>
+    <a href="https://series.naver.com/novel/detail.series?productNo=8736264" target="_blank" class="btn-link lang-en">View on Naver Series</a>
   </div>
 
   <!-- 6번 -->
@@ -233,18 +290,26 @@
     <div class="card-top">
       <img src="5482001558_org.jpg" class="cover-img" alt="검은 짐승을 길들이려면">
       <div class="content-body">
-        <h2 class="title">6. 검은 짐승을 길들이려면</h2>
-        <span class="author">작가: 라닐슨생</span>
+        <h2 class="title lang-ko">6. 검은 짐승을 길들이려면</h2>
+        <h2 class="title lang-en">6. To Tame a Black Beast</h2>
+        <span class="author lang-ko">작가: 라닐슨생</span>
+        <span class="author lang-en">Author: Ranil Seongsaeng</span>
         <div class="meta-line">
-          <span class="genre-tag">서양풍 / 판타지 로맨스 (계약, 집착남, 외유내강녀)</span>
-          <span>구성: 총 4권 (완결)</span>
+          <span class="genre-tag lang-ko">서양풍 / 판타지 로맨스 (계약, 집착남, 외유내강녀)</span>
+          <span class="genre-tag lang-en">Western / Fantasy Romance (Contract, Possessive ML, Soft Exterior Gentle FL)</span>
+          <span class="lang-ko">구성: 총 4권 (완결)</span>
+          <span class="lang-en">Volumes: 4 Volumes (Completed)</span>
         </div>
       </div>
     </div>
-    <div class="synopsis">
+    <div class="synopsis lang-ko">
       약혼자의 배신과 부모의 죽음으로 망명길에 오른 몰락한 왕녀 로잘린은 살아남기 위해 냉혹한 페닝턴 대공 루이스에게 구원을 청한다. 오만한 포식자인 루이스는 그녀에게 대가를 요구하며 위험한 올가미를 씌우고, 로잘린은 살기 위해 그의 곁에 머물며 서로를 파고드는 집착과 구원의 로맨스에 휘말리게 된다.
     </div>
-    <a href="https://series.naver.com/novel/detail.series?productNo=8571353" target="_blank" class="btn-link">네이버 시리즈에서 보기</a>
+    <div class="synopsis lang-en">
+      Rosalyn, a fallen princess forced into exile after her fiancé's betrayal and her parents' death, seeks salvation from the ruthless Grand Duke of Pennington, Lewis. As an arrogant predator, Lewis demands a heavy price and sets a dangerous snare for her. To survive, Rosalyn remains by his side, becoming entangled in a romance of mutual obsession and salvation.
+    </div>
+    <a href="https://series.naver.com/novel/detail.series?productNo=8571353" target="_blank" class="btn-link lang-ko">네이버 시리즈에서 보기</a>
+    <a href="https://series.naver.com/novel/detail.series?productNo=8571353" target="_blank" class="btn-link lang-en">View on Naver Series</a>
   </div>
 
   <!-- 7번 -->
@@ -252,18 +317,26 @@
     <div class="card-top">
       <img src="6244111.jpg" class="cover-img" alt="반짝이는 나의 어둠에게">
       <div class="content-body">
-        <h2 class="title">7. 반짝이는 나의 어둠에게</h2>
-        <span class="author">작가: 홍유디</span>
+        <h2 class="title lang-ko">7. 반짝이는 나의 어둠에게</h2>
+        <h2 class="title lang-en">7. To My Shining Darkness</h2>
+        <span class="author lang-ko">작가: 홍유디</span>
+        <span class="author lang-en">Author: Hong Yu-di</span>
         <div class="meta-line">
-          <span class="genre-tag">로판 / 서양풍 (군부물, 전생/환생)</span>
-          <span>구성: 총 11권 (1부 8권, 2부 3권 완결)</span>
+          <span class="genre-tag lang-ko">로판 / 서양풍 (군부물, 전생/환생)</span>
+          <span class="genre-tag lang-en">Romance Fantasy / Western (Military, Reincarnation)</span>
+          <span class="lang-ko">구성: 총 11권 (1부 8권, 2부 3권 완결)</span>
+          <span class="lang-en">Volumes: 11 Volumes (Part 1: 8 Vol, Part 2: 3 Vol Completed)</span>
         </div>
       </div>
     </div>
-    <div class="synopsis">
+    <div class="synopsis lang-ko">
       1부 &lt;괴물을 사랑하는 완벽한 방법&gt;의 개정판을 포함한 작품으로, 어둡고 잔혹한 운명 속에서 얽힌 두 남녀의 오랜 인연과 첫사랑을 다룬다. 전생과 환생을 가로지르는 비극적인 서사 속에서 나이 차이와 직위의 한계를 넘어 서로를 가슴 깊이 품어내는 굳건하고도 운명적인 사랑 이야기를 그린 로맨스 판타지다.
     </div>
-    <a href="https://series.naver.com/novel/detail.series?productNo=11843377" target="_blank" class="btn-link">네이버 시리즈에서 보기</a>
+    <div class="synopsis lang-en">
+      Including the revised edition of Part 1 &lt;The Perfect Way to Love a Monster&gt;, this story follows a man and woman bound by a long-standing fate and first love amid dark, cruel destiny. Traversing past lives and reincarnations, it is a romantic fantasy of enduring and fateful love that overcomes age gaps and status barriers.
+    </div>
+    <a href="https://series.naver.com/novel/detail.series?productNo=11843377" target="_blank" class="btn-link lang-ko">네이버 시리즈에서 보기</a>
+    <a href="https://series.naver.com/novel/detail.series?productNo=11843377" target="_blank" class="btn-link lang-en">View on Naver Series</a>
   </div>
 
   <!-- 8번 -->
@@ -271,18 +344,26 @@
     <div class="card-top">
       <img src="KakaoTalk_20260916_192606510_03.jpg" class="cover-img" alt="너라는 낙원">
       <div class="content-body">
-        <h2 class="title">8. 너라는 낙원</h2>
-        <span class="author">작가: 율희</span>
+        <h2 class="title lang-ko">8. 너라는 낙원</h2>
+        <h2 class="title lang-en">8. Paradise Called You</h2>
+        <span class="author lang-ko">작가: 율희</span>
+        <span class="author lang-en">Author: Yul-hee</span>
         <div class="meta-line">
-          <span class="genre-tag">현대물 / 로맨스</span>
-          <span>구성: 총 3권 (완결)</span>
+          <span class="genre-tag lang-ko">현대물 / 로맨스</span>
+          <span class="genre-tag lang-en">Modern / Romance</span>
+          <span class="lang-ko">구성: 총 3권 (완결)</span>
+          <span class="lang-en">Volumes: 3 Volumes (Completed)</span>
         </div>
       </div>
     </div>
-    <div class="synopsis">
+    <div class="synopsis lang-ko">
       열심히 살아왔지만 가혹한 운명 속에서 또다시 막대한 빚을 떠안게 된 여주인공 권제이와 그녀의 빚을 대신 갚아 주겠다며 접근하는 남주인공 사이의 지독하고 관능적인 상흔과 구원의 로맨스를 그린 이야기다.
     </div>
-    <a href="https://series.naver.com/novel/detail.series?productNo=5094726" target="_blank" class="btn-link">네이버 시리즈에서 보기</a>
+    <div class="synopsis lang-en">
+      Despite working hard, female protagonist Kwon Je-i finds herself saddled with immense debt due to cruel fate. The male protagonist approaches her, offering to pay off her debt. This story portrays a intense, sensual romance of scars and salvation between the two.
+    </div>
+    <a href="https://series.naver.com/novel/detail.series?productNo=5094726" target="_blank" class="btn-link lang-ko">네이버 시리즈에서 보기</a>
+    <a href="https://series.naver.com/novel/detail.series?productNo=5094726" target="_blank" class="btn-link lang-en">View on Naver Series</a>
   </div>
 
   <!-- 9번 -->
@@ -290,18 +371,26 @@
     <div class="card-top">
       <img src="cover_f_2.jpg" class="cover-img" alt="더는 연약하지 않다">
       <div class="content-body">
-        <h2 class="title">9. 더는 연약하지 않다</h2>
-        <span class="author">작가: 때시비우</span>
+        <h2 class="title lang-ko">9. 더는 연약하지 않다</h2>
+        <h2 class="title lang-en">9. No Longer Fragile</h2>
+        <span class="author lang-ko">작가: 때시비우</span>
+        <span class="author lang-en">Author: Tteshibiu</span>
         <div class="meta-line">
-          <span class="genre-tag">서양풍 / 판타지 로맨스 (영혼체인지/빙의, 계약, 능력녀, 후회남)</span>
-          <span>구성: 총 4권 (완결)</span>
+          <span class="genre-tag lang-ko">서양풍 / 판타지 로맨스 (영혼체인지/빙의, 계약, 능력녀, 후회남)</span>
+          <span class="genre-tag lang-en">Western / Fantasy Romance (Soul Swap/Transmigration, Contract, Capable FL, Regretful ML)</span>
+          <span class="lang-ko">구성: 총 4권 (완결)</span>
+          <span class="lang-en">Volumes: 4 Volumes (Completed)</span>
         </div>
       </div>
     </div>
-    <div class="synopsis">
+    <div class="synopsis lang-ko">
       세드릭 공작의 충실한 까마귀 기사 히아신스는 죽음 이후 연약한 대공가의 유리아 공녀의 몸으로 빙의하게 된다. 포크 하나 제대로 들기 힘든 '유리 몸'에 절망하면서도, 자신을 피하며 파혼을 요구하는 약혼자 세드릭과 얽힌 죽음의 진실을 밝히기 위해 본격적인 체력 단련과 생존을 위한 고군분투를 시작하는 유쾌하고 짜릿한 로맨스 판타지.
     </div>
-    <a href="https://series.naver.com/novel/detail.series?productNo=8145827" target="_blank" class="btn-link">네이버 시리즈에서 보기</a>
+    <div class="synopsis lang-en">
+      Hyacinth, a faithful Raven Knight under Duke Cedric, dies and transmigrates into the frail body of Princess Yuria of the Grand Ducal house. Despairing over her 'glass-like body' that can barely lift a fork, she nevertheless embarks on intense physical training to survive and uncover the truth behind her death, involving her fiancé Cedric who avoids her and demands an annulment.
+    </div>
+    <a href="https://series.naver.com/novel/detail.series?productNo=8145827" target="_blank" class="btn-link lang-ko">네이버 시리즈에서 보기</a>
+    <a href="https://series.naver.com/novel/detail.series?productNo=8145827" target="_blank" class="btn-link lang-en">View on Naver Series</a>
   </div>
 
   <!-- 10번 -->
@@ -309,18 +398,26 @@
     <div class="card-top">
       <img src="5482000055_org.jpg" class="cover-img" alt="사로잡힌 새">
       <div class="content-body">
-        <h2 class="title">10. 사로잡힌 새</h2>
-        <span class="author">작가: 바디바</span>
+        <h2 class="title lang-ko">10. 사로잡힌 새</h2>
+        <h2 class="title lang-en">10. Captured Bird</h2>
+        <span class="author lang-ko">작가: 바디바</span>
+        <span class="author lang-en">Author: Badiba</span>
         <div class="meta-line">
-          <span class="genre-tag">동양풍 로판 / 판타지 로맨스</span>
-          <span>구성: 총 3권 (완결)</span>
+          <span class="genre-tag lang-ko">동양풍 로판 / 판타지 로맨스</span>
+          <span class="genre-tag lang-en">Eastern Romance Fantasy / Fantasy Romance</span>
+          <span class="lang-ko">구성: 총 3권 (완결)</span>
+          <span class="lang-en">Volumes: 3 Volumes (Completed)</span>
         </div>
       </div>
     </div>
-    <div class="synopsis">
+    <div class="synopsis lang-ko">
       땅에 정착하지 않고 하늘을 유랑하는 날개족 요괴 '연조'는 어느 날 눈이 먼 남자를 줍는다. 남자의 상처가 회복되기도 전에 떠나려 하지만, 남자는 얼굴도 보지 못한 연조를 향해 도망칠 테면 도망쳐 보라며 다시 만날 것을 예고한다.
     </div>
-    <a href="https://ridibooks.com/books/5482000055" target="_blank" class="btn-link">리디북스에서 보기</a>
+    <div class="synopsis lang-en">
+      Yeonjo, a winged yokai who roams the skies without settling on land, picks up a blind man one day. Before the man's wounds can fully heal, Yeonjo tries to leave, but the man, despite never having seen her face, tells her to try running if she can, promising that they will meet again.
+    </div>
+    <a href="https://ridibooks.com/books/5482000055" target="_blank" class="btn-link lang-ko">리디북스에서 보기</a>
+    <a href="https://ridibooks.com/books/5482000055" target="_blank" class="btn-link lang-en">View on Ridi Books</a>
   </div>
 
   <!-- 11번 -->
@@ -328,18 +425,26 @@
     <div class="card-top">
       <img src="5482000034_org.jpg" class="cover-img" alt="관계의 이유">
       <div class="content-body">
-        <h2 class="title">11. 관계의 이유</h2>
-        <span class="author">작가: 율희</span>
+        <h2 class="title lang-ko">11. 관계의 이유</h2>
+        <h2 class="title lang-en">11. Reasons for a Relationship</h2>
+        <span class="author lang-ko">작가: 율희</span>
+        <span class="author lang-en">Author: Yul-hee</span>
         <div class="meta-line">
-          <span class="genre-tag">현대물 / 로맨스 (정략결혼, 몸정&gt;맘정, 재벌남, 후회남, 상처녀, 신파)</span>
-          <span>구성: 총 2권 (완결)</span>
+          <span class="genre-tag lang-ko">현대물 / 로맨스 (정략결혼, 몸정&gt;맘정, 재벌남, 후회남, 상처녀, 신파)</span>
+          <span class="genre-tag lang-en">Modern / Romance (Arranged Marriage, Physical Attraction &gt; Love, Chaebol ML, Regretful ML, Scarred FL, Melodrama)</span>
+          <span class="lang-ko">구성: 총 2권 (완결)</span>
+          <span class="lang-en">Volumes: 2 Volumes (Completed)</span>
         </div>
       </div>
     </div>
-    <div class="synopsis">
+    <div class="synopsis lang-ko">
       조부끼리의 약속으로 대명 그룹 상무 서재운과 정략결혼을 하게 된 선진 제약의 외동딸이자 화가 한이서는 그를 사랑하기에 사랑을 강요하지 않는 조건으로 결혼을 받아들인다. 냉정한 남자의 방치 속에서 외로움과 상처를 견디며 살아가던 중, 뒤늦게 그녀의 존재를 깨닫고 무너져 내리며 후회하는 남자의 절절하고도 애잔한 정통 신파 로맨스.
     </div>
-    <a href="https://series.naver.com/novel/detail.series?productNo=8785679" target="_blank" class="btn-link">네이버 시리즈에서 보기</a>
+    <div class="synopsis lang-en">
+      Han I-seo, a painter and only daughter of Seonjin Pharmaceuticals, enters an arranged marriage with Seo Jae-woon, Managing Director of Daemyung Group, due to a promise between their grandfathers. Because she loves him, she agrees to the marriage on the condition of not forcing love upon him. Enduring loneliness and scars under his cold neglect, she lives on until he belatedly realizes her value, crumbling in regret in this heartbreaking melodrama.
+    </div>
+    <a href="https://series.naver.com/novel/detail.series?productNo=8785679" target="_blank" class="btn-link lang-ko">네이버 시리즈에서 보기</a>
+    <a href="https://series.naver.com/novel/detail.series?productNo=8785679" target="_blank" class="btn-link lang-en">View on Naver Series</a>
   </div>
 
   <!-- 12번 -->
@@ -347,18 +452,26 @@
     <div class="card-top">
       <img src="5482000067_org.jpg" class="cover-img" alt="이름 없는 짐승">
       <div class="content-body">
-        <h2 class="title">12. 이름 없는 짐승</h2>
-        <span class="author">작가: 바디바</span>
+        <h2 class="title lang-ko">12. 이름 없는 짐승</h2>
+        <h2 class="title lang-en">12. Nameless Beast</h2>
+        <span class="author lang-ko">작가: 바디바</span>
+        <span class="author lang-en">Author: Badiba</span>
         <div class="meta-line">
-          <span class="genre-tag">현대물 / 판타지물 / 로판 (신화물, 피폐물)</span>
-          <span>구성: 총 2권 (완결)</span>
+          <span class="genre-tag lang-ko">현대물 / 판타지물 / 로판 (신화물, 피폐물)</span>
+          <span class="genre-tag lang-en">Modern / Fantasy / Romance Fantasy (Mythology, Angst/Dark Romance)</span>
+          <span class="lang-ko">구성: 총 2권 (완결)</span>
+          <span class="lang-en">Volumes: 2 Volumes (Completed)</span>
         </div>
       </div>
     </div>
-    <div class="synopsis">
+    <div class="synopsis lang-ko">
       평범하게 학교와 집을 오가던 아연은 어느 날 정체 모를 남자에게 납치당하며 일상이 완전히 무너진다. 남자의 억압 속에서 발버둥 치던 아연은 그가 단순한 납치범이 아니며, 매일 밤 자신의 꿈속에 나타나던 신화 속 태양신 '테스카틀리포카'라는 사실을 깨닫게 되는데…
     </div>
-    <a href="https://ridibooks.com/books/5482000067" target="_blank" class="btn-link">리디북스에서 보기</a>
+    <div class="synopsis lang-en">
+      A-yeon, who led an ordinary life commuting between school and home, has her life completely shattered when she is kidnapped by a mysterious man. Struggling under his restraint, A-yeon realizes that he is no mere kidnapper, but 'Tezcatlipoca'—the mythological Sun God who appeared in her dreams every night...
+    </div>
+    <a href="https://ridibooks.com/books/5482000067" target="_blank" class="btn-link lang-ko">리디북스에서 보기</a>
+    <a href="https://ridibooks.com/books/5482000067" target="_blank" class="btn-link lang-en">View on Ridi Books</a>
   </div>
 
   <!-- 13번 -->
@@ -366,19 +479,28 @@
     <div class="card-top">
       <img src="5463197.jpg" class="cover-img" alt="꿈속의 포로">
       <div class="content-body">
-        <h2 class="title">13. 꿈속의 포로</h2>
-        <span class="author">작가: 가온나라빛</span>
+        <h2 class="title lang-ko">13. 꿈속의 포로</h2>
+        <h2 class="title lang-en">13. Captive in a Dream</h2>
+        <span class="author lang-ko">작가: 가온나라빛</span>
+        <span class="author lang-en">Author: Gaonnarabit</span>
         <div class="meta-line">
-          <span class="genre-tag">판타지물 / 서양풍 로판 (궁정로맨스, 피폐물)</span>
-          <span>구성: 단권 (완결)</span>
+          <span class="genre-tag lang-ko">판타지물 / 서양풍 로판 (궁정로맨스, 피폐물)</span>
+          <span class="genre-tag lang-en">Fantasy / Western Romance Fantasy (Court Romance, Angst/Dark Romance)</span>
+          <span class="lang-ko">구성: 단권 (완결)</span>
+          <span class="lang-en">Volumes: Single Volume (Completed)</span>
         </div>
       </div>
     </div>
-    <div class="note">★ 특이사항: 타사 웹툰 출간 작품</div>
-    <div class="synopsis">
+    <div class="note lang-ko">★ 특이사항: 타사 웹툰 출간 작품</div>
+    <div class="note lang-en">★ Special Note: Adapted into a Webtoon by another publisher</div>
+    <div class="synopsis lang-ko">
       황성 창고를 청소하다 우연히 낡은 오르골을 얻은 평범한 하녀 엘라는 매일 밤 위험하고 몽환적인 꿈을 꾸기 시작한다. 흑마법 저주의 고통을 견디기 위해 가수면 상태로 지내던 드로이스 제국의 냉혹한 황제 칼라일은 꿈속에서 만난 엘라에게 강한 집착과 소유욕을 느끼며 그녀를 찾아내려 한다.
     </div>
-    <a href="https://ridibooks.com/books/5482000077" target="_blank" class="btn-link">리디북스에서 보기</a>
+    <div class="synopsis lang-en">
+      Ella, an ordinary maid who accidentally acquires an old music box while cleaning the imperial warehouse, begins experiencing dangerous and dreamlike visions every night. Carlyle, the cold-blooded Emperor of the Drois Empire who stays in a state of light sleep to endure the agony of a dark magic curse, feels an intense obsession and possessiveness toward the Ella he meets in his dreams and sets out to find her.
+    </div>
+    <a href="https://ridibooks.com/books/5482000077" target="_blank" class="btn-link lang-ko">리디북스에서 보기</a>
+    <a href="https://ridibooks.com/books/5482000077" target="_blank" class="btn-link lang-en">View on Ridi Books</a>
   </div>
 
   <!-- 14번 -->
@@ -386,18 +508,26 @@
     <div class="card-top">
       <img src="KakaoTalk_20260916_192606510_05.jpg" class="cover-img" alt="여왕의 은밀한 무도회">
       <div class="content-body">
-        <h2 class="title">14. 여왕의 은밀한 무도회</h2>
-        <span class="author">작가: 가온나라빛</span>
+        <h2 class="title lang-ko">14. 여왕의 은밀한 무도회</h2>
+        <h2 class="title lang-en">14. The Queen's Secret Masquerade</h2>
+        <span class="author lang-ko">작가: 가온나라빛</span>
+        <span class="author lang-en">Author: Gaonnarabit</span>
         <div class="meta-line">
-          <span class="genre-tag">서양풍 / 판타지 로맨스 (궁정로맨스, 여공남수, 짝사랑남, 도도녀)</span>
-          <span>구성: 단권</span>
+          <span class="genre-tag lang-ko">서양풍 / 판타지 로맨스 (궁정로맨스, 여공남수, 짝사랑남, 도도녀)</span>
+          <span class="genre-tag lang-en">Western / Fantasy Romance (Court Romance, Dominant FL/Submissive ML, Devoted ML, Haughty FL)</span>
+          <span class="lang-ko">구성: 단권</span>
+          <span class="lang-en">Volumes: Single Volume</span>
         </div>
       </div>
     </div>
-    <div class="synopsis">
+    <div class="synopsis lang-ko">
       어린 나이에 즉위해 명성을 떨치는 당당한 에그리타 제국의 여왕 로웨나는 은밀한 가면무도회에서 만난 정체 모를 은빛 가면의 남자로부터 강렬한 쾌락과 잊지 못할 밤을 선물 받는다. 사실 그의 정체는 오랜 시간 여왕을 남몰래 짝사랑해 온 충실한 총기사단장 카이로프였으며, 모든 것을 가진 여왕이 그를 온전히 자신의 것으로 만들기 위해 치명적인 덫을 놓기 시작하는 로맨스.
     </div>
-    <a href="https://ridibooks.com/books/5482000075" target="_blank" class="btn-link">리디북스에서 보기</a>
+    <div class="synopsis lang-en">
+      Rowena, the dignified Queen of the Egrita Empire who ascended at a young age and earned great renown, is gifted an unforgettable night of intense pleasure by a mysterious silver-masked man at a secret masquerade. In truth, he is Kairof, the loyal Commander of the Royal Knights who has secretly loved the Queen for a long time. The story unfolds as the Queen, who has everything, sets a fatal trap to make him completely hers.
+    </div>
+    <a href="https://ridibooks.com/books/5482000075" target="_blank" class="btn-link lang-ko">리디북스에서 보기</a>
+    <a href="https://ridibooks.com/books/5482000075" target="_blank" class="btn-link lang-en">View on Ridi Books</a>
   </div>
 
   <!-- 15번 -->
@@ -405,18 +535,26 @@
     <div class="card-top">
       <img src="5482001556_org.jpg" class="cover-img" alt="색마를 주웠다">
       <div class="content-body">
-        <h2 class="title">15. 색마를 주웠다</h2>
-        <span class="author">작가: 라닐슨생</span>
+        <h2 class="title lang-ko">15. 색마를 주웠다</h2>
+        <h2 class="title lang-en">15. I Picked Up an Incubus</h2>
+        <span class="author lang-ko">작가: 라닐슨생</span>
+        <span class="author lang-en">Author: Ranil Seongsaeng</span>
         <div class="meta-line">
-          <span class="genre-tag">판타지 로맨스 / 가상세계물 (초월적존재, 동거, 계략남, 평범녀)</span>
-          <span>구성: 총 2권 (완결)</span>
+          <span class="genre-tag lang-ko">판타지 로맨스 / 가상세계물 (초월적존재, 동거, 계략남, 평범녀)</span>
+          <span class="genre-tag lang-en">Fantasy Romance / Fictional World (Transcendent Being, Cohabitation, Scheme ML, Ordinary FL)</span>
+          <span class="lang-ko">구성: 총 2권 (완결)</span>
+          <span class="lang-en">Volumes: 2 Volumes (Completed)</span>
         </div>
       </div>
     </div>
-    <div class="synopsis">
+    <div class="synopsis lang-ko">
       사람을 피해 산속에서 조용히 살아가던 아일린은 어느 날 낮에 주워 온 예쁘장한 어린 마족 아이가 밤마다 위험한 본색을 드러내는 고위 '색마' 베르였다는 사실을 알게 된다. 어린아이의 모습 뒤에 은밀하고 치명적인 속내를 숨긴 계략남 베르에게 휘말려, 걷잡을 수 없는 쾌락과 달콤한 올가미 속으로 빠져들게 되는 동거 로맨스.
     </div>
-    <a href="https://ridibooks.com/books/5482001556" target="_blank" class="btn-link">리디북스에서 보기</a>
+    <div class="synopsis lang-en">
+      Eileen, who lives quietly in the mountains to avoid people, discovers that the cute demon child she brought home during the day is actually 'Ver', a high-ranking incubus who reveals his dangerous true nature at night. Entangled with Ver—a scheming man hiding secret and fatal intentions behind a child's appearance—she falls into a cohabitation romance of unstoppable pleasure and sweet snares.
+    </div>
+    <a href="https://ridibooks.com/books/5482001556" target="_blank" class="btn-link lang-ko">리디북스에서 보기</a>
+    <a href="https://ridibooks.com/books/5482001556" target="_blank" class="btn-link lang-en">View on Ridi Books</a>
   </div>
 
   <!-- 16번 -->
@@ -424,18 +562,26 @@
     <div class="card-top">
       <img src="KakaoTalk_20260916_192606510_01.jpg" class="cover-img" alt="상스러운 것">
       <div class="content-body">
-        <h2 class="title">16. 상스러운 것</h2>
-        <span class="author">작가: 클람</span>
+        <h2 class="title lang-ko">16. 상스러운 것</h2>
+        <h2 class="title lang-en">16. A Vulgar Thing</h2>
+        <span class="author lang-ko">작가: 클람</span>
+        <span class="author lang-en">Author: Kklam</span>
         <div class="meta-line">
-          <span class="genre-tag">현대물 / 로맨스</span>
-          <span>구성: 총 2권 (완결)</span>
+          <span class="genre-tag lang-ko">현대물 / 로맨스</span>
+          <span class="genre-tag lang-en">Modern / Romance</span>
+          <span class="lang-ko">구성: 총 2권 (완결)</span>
+          <span class="lang-en">Volumes: 2 Volumes (Completed)</span>
         </div>
       </div>
     </div>
-    <div class="synopsis">
+    <div class="synopsis lang-ko">
       한선우 본부장의 비서 강시영은 밤중에 걸려온 의문의 전화를 통해 상사의 비밀(부회장의 사생아)을 알게 된다. 상스러운 비밀을 들은 죄로 한선우의 동생 한재현에게 밤마다 부려지다 결국 한선우에게 들키고 마는데…
     </div>
-    <a href="https://series.naver.com/novel/detail.series?productNo=13043706" target="_blank" class="btn-link">네이버 시리즈에서 보기</a>
+    <div class="synopsis lang-en">
+      Kang Si-young, secretary to Division Head Han Seon-woo, learns her boss's secret (that he is the Vice Chairman's illegitimate child) through a mysterious late-night phone call. As punishment for learning this vulgar secret, she is bossed around every night by Han Seon-woo's younger brother, Han Jae-hyun, until she is eventually caught by Han Seon-woo himself...
+    </div>
+    <a href="https://series.naver.com/novel/detail.series?productNo=13043706" target="_blank" class="btn-link lang-ko">네이버 시리즈에서 보기</a>
+    <a href="https://series.naver.com/novel/detail.series?productNo=13043706" target="_blank" class="btn-link lang-en">View on Naver Series</a>
   </div>
 
   <!-- 17번 -->
@@ -443,18 +589,26 @@
     <div class="card-top">
       <img src="KakaoTalk_20260916_192606510_02.jpg" class="cover-img" alt="거짓 결혼">
       <div class="content-body">
-        <h2 class="title">17. 거짓 결혼</h2>
-        <span class="author">작가: 강해주</span>
+        <h2 class="title lang-ko">17. 거짓 결혼</h2>
+        <h2 class="title lang-en">17. False Marriage</h2>
+        <span class="author lang-ko">작가: 강해주</span>
+        <span class="author lang-en">Author: Kang Hae-ju</span>
         <div class="meta-line">
-          <span class="genre-tag">현대물 / 로맨스 (계약결혼, 집착남, 상처녀)</span>
-          <span>구성: 총 3권 (완결)</span>
+          <span class="genre-tag lang-ko">현대물 / 로맨스 (계약결혼, 집착남, 상처녀)</span>
+          <span class="genre-tag lang-en">Modern / Romance (Contract Marriage, Possessive ML, Scarred FL)</span>
+          <span class="lang-ko">구성: 총 3권 (완결)</span>
+          <span class="lang-en">Volumes: 3 Volumes (Completed)</span>
         </div>
       </div>
     </div>
-    <div class="synopsis">
+    <div class="synopsis lang-ko">
       양부모의 이미지 메이킹에 이용당하던 서하는 잃어버린 눈을 되찾고 자신만의 삶을 살기 위해 죽음을 불사하고 계약결혼을 제안한다. 달콤한 미소 뒤에 본색을 숨긴 진재하는 강요와도 같은 협박으로 그녀를 옭아매며, 서로 다른 목적을 가진 두 사람의 위태로운 정략결혼이 시작되는 이야기다.
     </div>
-    <a href="https://series.naver.com/novel/detail.series?productNo=6243173" target="_blank" class="btn-link">네이버 시리즈에서 보기</a>
+    <div class="synopsis lang-en">
+      Seo-ha, exploited for her adoptive parents' image-making, proposes a contract marriage, risking death to reclaim her lost eyesight and live her own life. Jin Jae-ha, hiding his true colors behind a sweet smile, entangles her with coercive threats, beginning a precarious arranged marriage between two people with very different motives.
+    </div>
+    <a href="https://series.naver.com/novel/detail.series?productNo=6243173" target="_blank" class="btn-link lang-ko">네이버 시리즈에서 보기</a>
+    <a href="https://series.naver.com/novel/detail.series?productNo=6243173" target="_blank" class="btn-link lang-en">View on Naver Series</a>
   </div>
 
   <!-- 18번 -->
@@ -462,18 +616,26 @@
     <div class="card-top">
       <img src="5482000038_org.jpg" class="cover-img" alt="꽃을 얽은 뱀">
       <div class="content-body">
-        <h2 class="title">18. 꽃을 얽은 뱀</h2>
-        <span class="author">작가: 백설은</span>
+        <h2 class="title lang-ko">18. 꽃을 얽은 뱀</h2>
+        <h2 class="title lang-en">18. The Snake Coiled Around the Flower</h2>
+        <span class="author lang-ko">작가: 백설은</span>
+        <span class="author lang-en">Author: Baek Seol-eun</span>
         <div class="meta-line">
-          <span class="genre-tag">서양풍 / 로맨스판타지 (고딕로맨스, 초월적존재, 집착남, 다정녀)</span>
-          <span>구성: 총 2권 (완결)</span>
+          <span class="genre-tag lang-ko">서양풍 / 로맨스판타지 (고딕로맨스, 초월적존재, 집착남, 다정녀)</span>
+          <span class="genre-tag lang-en">Western / Romance Fantasy (Gothic Romance, Transcendent Being, Possessive ML, Gentle FL)</span>
+          <span class="lang-ko">구성: 총 2권 (완결)</span>
+          <span class="lang-en">Volumes: 2 Volumes (Completed)</span>
         </div>
       </div>
     </div>
-    <div class="synopsis">
+    <div class="synopsis lang-ko">
       위독한 어머니를 간병하기 위해 찾아간 미스티무어 홀에서 샬럿 헤겔은 식민지 섬에서 실종되었다가 완전히 달라져 돌아온 켄싱턴 백작의 동생 리하르트 켄싱턴을 만난다. 소름 끼치도록 매혹적이면서도 위험한 본색을 드러내는 리하르트에게 샬럿은 벗어나려 하지만, 뱀에 휘감긴 먹잇감처럼 그의 잔인하고도 집요한 올가미 속으로 빨려 들어가게 되는 치명적인 고딕 로맨스.
     </div>
-    <a href="https://series.naver.com/novel/detail.series?productNo=5443555" target="_blank" class="btn-link">네이버 시리즈에서 보기</a>
+    <div class="synopsis lang-en">
+      While visiting Mistymoor Hall to nurse her critically ill mother, Charlotte Hegel meets Richard Kensington, the younger brother of Count Kensington, who has returned completely changed after going missing on a colonial island. Charlotte tries to escape Richard as he reveals his chillingly alluring yet dangerous nature, but like prey wrapped by a snake, she is drawn into his cruel and persistent snare in this fatal Gothic romance.
+    </div>
+    <a href="https://series.naver.com/novel/detail.series?productNo=5443555" target="_blank" class="btn-link lang-ko">네이버 시리즈에서 보기</a>
+    <a href="https://series.naver.com/novel/detail.series?productNo=5443555" target="_blank" class="btn-link lang-en">View on Naver Series</a>
   </div>
 
   <!-- 19번 -->
@@ -481,18 +643,26 @@
     <div class="card-top">
       <img src="5482000047_org.jpg" class="cover-img" alt="무엄한 황궁 스캔들">
       <div class="content-body">
-        <h2 class="title">19. 무엄한 황궁 스캔들</h2>
-        <span class="author">작가: 야옹마마</span>
+        <h2 class="title lang-ko">19. 무엄한 황궁 스캔들</h2>
+        <h2 class="title lang-en">19. Impudent Palace Scandal</h2>
+        <span class="author lang-ko">작가: 야옹마마</span>
+        <span class="author lang-en">Author: Ya-ong Mama</span>
         <div class="meta-line">
-          <span class="genre-tag">판타지 로맨스 / 차원이동물 (황궁로맨스, 능력녀, 냉철남)</span>
-          <span>구성: 총 3권 (완결)</span>
+          <span class="genre-tag lang-ko">판타지 로맨스 / 차원이동물 (황궁로맨스, 능력녀, 냉철남)</span>
+          <span class="genre-tag lang-en">Fantasy Romance / Isekai (Palace Romance, Capable FL, Cold ML)</span>
+          <span class="lang-ko">구성: 총 3권 (완결)</span>
+          <span class="lang-en">Volumes: 3 Volumes (Completed)</span>
         </div>
       </div>
     </div>
-    <div class="synopsis">
+    <div class="synopsis lang-ko">
       불운한 사고로 눈을 떠보니 현실에 존재하지 않는 이세계 '단 제국'에 떨어지게 된 요안. 약화된 황권을 되살리기 위해 애쓰던 냉철한 황제 단의현은 신지식을 가진 그녀를 황실 예언서 속 '보는 자'로 여기며 도움을 청하고, 요안 또한 원래 세계로 돌아가기 위해 그와 손을 잡는다. 황권을 되살리기 위한 협력 속에서 피어나는 아슬아슬하고 거침없는 궁정 로맨스.
     </div>
-    <a href="https://series.naver.com/novel/detail.series?productNo=5442481" target="_blank" class="btn-link">네이버 시리즈에서 보기</a>
+    <div class="synopsis lang-en">
+      After an unfortunate accident, Yo-an wakes up in the 'Dan Empire', an otherworldly realm that does not exist in reality. Dan Eui-hyeon, a cold emperor struggling to revive weakening imperial authority, regards her and her modern knowledge as the 'Beholder' from imperial prophecy and asks for her aid. Yo-an joins hands with him to find a way back to her original world. A thrill-filled, bold court romance blossoms amidst their cooperation to restore imperial power.
+    </div>
+    <a href="https://series.naver.com/novel/detail.series?productNo=5442481" target="_blank" class="btn-link lang-ko">네이버 시리즈에서 보기</a>
+    <a href="https://series.naver.com/novel/detail.series?productNo=5442481" target="_blank" class="btn-link lang-en">View on Naver Series</a>
   </div>
 
   <!-- 20번 -->
@@ -500,18 +670,26 @@
     <div class="card-top">
       <img src="Cover_1_3.jpg" class="cover-img" alt="판타지(Fantasy):공상">
       <div class="content-body">
-        <h2 class="title">20. 판타지(Fantasy):공상</h2>
-        <span class="author">작가: 자용</span>
+        <h2 class="title lang-ko">20. 판타지(Fantasy):공상</h2>
+        <h2 class="title lang-en">20. Fantasy: Daydream</h2>
+        <span class="author lang-ko">작가: 자용</span>
+        <span class="author lang-en">Author: Ja-yong</span>
         <div class="meta-line">
-          <span class="genre-tag">현대물 / 로맨스 (피폐물, 구원물)</span>
-          <span>구성: 총 2권 (완결)</span>
+          <span class="genre-tag lang-ko">현대물 / 로맨스 (피폐물, 구원물)</span>
+          <span class="genre-tag lang-en">Modern / Romance (Angst/Dark Romance, Salvation)</span>
+          <span class="lang-ko">구성: 총 2권 (완결)</span>
+          <span class="lang-en">Volumes: 2 Volumes (Completed)</span>
         </div>
       </div>
     </div>
-    <div class="synopsis">
+    <div class="synopsis lang-ko">
       성악을 포기하고 8년 차 뮤지컬 배우로 살아가던 정민은 오래된 연인 승훈과의 지속된 권태로움에 시달린다. 그러던 중 재벌가 후원자의 아들이자 열렬한 팬을 자처하는 여덟 살 연하의 김은호가 접근하고, 정민은 은호의 다정하면서도 집요한 집착과 치명적인 목소리에 아슬아슬하게 이끌리며 감정의 혼란을 겪게 된다.
     </div>
-    <a href="https://ridibooks.com/books/5482003274" target="_blank" class="btn-link">리디북스에서 보기</a>
+    <div class="synopsis lang-en">
+      Jeong-min, who gave up vocal music and has been working as a musical actor for 8 years, suffers from persistent weariness with her long-time lover, Seung-hoon. Meanwhile, Kim Eun-ho, eight years her junior and the son of a wealthy patron who claims to be an ardent fan, approaches her. Jeong-min finds herself precariously drawn to Eun-ho's tender yet persistent obsession and fatal voice, experiencing emotional turmoil.
+    </div>
+    <a href="https://ridibooks.com/books/5482003274" target="_blank" class="btn-link lang-ko">리디북스에서 보기</a>
+    <a href="https://ridibooks.com/books/5482003274" target="_blank" class="btn-link lang-en">View on Ridi Books</a>
   </div>
 
   <!-- 21번 -->
@@ -519,18 +697,26 @@
     <div class="card-top">
       <img src="5482000071_org.jpg" class="cover-img" alt="황후의 남자를 훔치다">
       <div class="content-body">
-        <h2 class="title">21. 황후의 남자를 훔치다</h2>
-        <span class="author">작가: 윤희사</span>
+        <h2 class="title lang-ko">21. 황후의 남자를 훔치다</h2>
+        <h2 class="title lang-en">21. Stealing the Empress's Man</h2>
+        <span class="author lang-ko">작가: 윤희사</span>
+        <span class="author lang-en">Author: Yoon Hee-sa</span>
         <div class="meta-line">
-          <span class="genre-tag">서양풍 / 판타지 로맨스 (궁정로맨스, 정략결혼, 계략녀, 상처남)</span>
-          <span>구성: 총 4권 (완결)</span>
+          <span class="genre-tag lang-ko">서양풍 / 판타지 로맨스 (궁정로맨스, 정략결혼, 계략녀, 상처남)</span>
+          <span class="genre-tag lang-en">Western / Fantasy Romance (Court Romance, Arranged Marriage, Scheme FL, Scarred ML)</span>
+          <span class="lang-ko">구성: 총 4권 (완결)</span>
+          <span class="lang-en">Volumes: 4 Volumes (Completed)</span>
         </div>
       </div>
     </div>
-    <div class="synopsis">
+    <div class="synopsis lang-ko">
       거듭된 정략결혼으로 이용당하다 두 번째 남편의 장례식마저 아버지의 야욕에 희생될 위기에 처한 엘리아나는 스스로 삶을 개척하기로 결심한다. 그녀는 황후를 향한 짝사랑으로 황성을 떠도는 선황제의 서자이자 제국의 망나니 그레디 크라이버에게 접근해, 서로 다른 목적과 상처를 감춘 채 위험한 계약과 치명적인 관계 속으로 뛰어드는 이야기다.
     </div>
-    <a href="https://series.naver.com/novel/detail.series?productNo=8525162" target="_blank" class="btn-link">네이버 시리즈에서 보기</a>
+    <div class="synopsis lang-en">
+      Repeatedly used through political marriages, Eliana faces the risk of even her second husband's funeral being sacrificed to her father's ambitions, prompting her to pioneer her own life. She approaches Grady Criver—an illegitimate son of the late emperor and imperial scoundrel who wanders the castle due to an unrequited love for the Empress—diving into a dangerous contract and fatal relationship while concealing their differing motives and hidden scars.
+    </div>
+    <a href="https://series.naver.com/novel/detail.series?productNo=8525162" target="_blank" class="btn-link lang-ko">네이버 시리즈에서 보기</a>
+    <a href="https://series.naver.com/novel/detail.series?productNo=8525162" target="_blank" class="btn-link lang-en">View on Naver Series</a>
   </div>
 
   <!-- 22번 -->
@@ -538,18 +724,26 @@
     <div class="card-top">
       <img src="5482000069_org.jpg" class="cover-img" alt="하루에도 열두 번">
       <div class="content-body">
-        <h2 class="title">22. 하루에도 열두 번</h2>
-        <span class="author">작가: 고슬밥</span>
+        <h2 class="title lang-ko">22. 하루에도 열두 번</h2>
+        <h2 class="title lang-en">22. A Dozen Times a Day</h2>
+        <span class="author lang-ko">작가: 고슬밥</span>
+        <span class="author lang-en">Author: Goseulbap</span>
         <div class="meta-line">
-          <span class="genre-tag">현대물 / 로맨스 (재회물, 오해, 애잔물, 재벌남, 후회녀)</span>
-          <span>구성: 총 2권 (완결)</span>
+          <span class="genre-tag lang-ko">현대물 / 로맨스 (재회물, 오해, 애잔물, 재벌남, 후회녀)</span>
+          <span class="genre-tag lang-en">Modern / Romance (Reunion, Misunderstanding, Heartrending, Chaebol ML, Regretful FL)</span>
+          <span class="lang-ko">구성: 총 2권 (완결)</span>
+          <span class="lang-en">Volumes: 2 Volumes (Completed)</span>
         </div>
       </div>
     </div>
-    <div class="synopsis">
+    <div class="synopsis lang-ko">
       5년 전 자신을 매몰차게 떠났던 옛 연인 서다은을 이복동생의 약혼녀이자 식물인간이 된 환자를 돌보는 처지로 우연히 재회하게 된 정관 그룹 3세 명서욱의 이야기다. 차가운 원망과 미련, 얽히설킨 오해 속에서 다시 시작된 두 사람의 절절하고도 아슬아슬한 애증 로맨스.
     </div>
-    <a href="https://series.naver.com/novel/detail.series?productNo=8155308" target="_blank" class="btn-link">네이버 시리즈에서 보기</a>
+    <div class="synopsis lang-en">
+      The story of Myeong Seo-wook, a third-generation heir of the Jeonggwan Group, who unexpectedly reunites with his ex-lover Seo Da-eun—who harshly left him five years ago—now acting as the fiancée to his half-brother and a caregiver to a vegetative patient. A heart-wrenching, precarious love-hate romance reignites amid cold resentment, lingering feelings, and tangled misunderstandings.
+    </div>
+    <a href="https://series.naver.com/novel/detail.series?productNo=8155308" target="_blank" class="btn-link lang-ko">네이버 시리즈에서 보기</a>
+    <a href="https://series.naver.com/novel/detail.series?productNo=8155308" target="_blank" class="btn-link lang-en">View on Naver Series</a>
   </div>
 
   <!-- 23번 -->
@@ -557,18 +751,26 @@
     <div class="card-top">
       <img src="5398045.jpg" class="cover-img" alt="틈입">
       <div class="content-body">
-        <h2 class="title">23. 틈입</h2>
-        <span class="author">작가: 한까치</span>
+        <h2 class="title lang-ko">23. 틈입</h2>
+        <h2 class="title lang-en">23. Intrusion</h2>
+        <span class="author lang-ko">작가: 한까치</span>
+        <span class="author lang-en">Author: Han Kkachi</span>
         <div class="meta-line">
-          <span class="genre-tag">현대물 / 로맨스 (선결혼후연애, 계약결혼, 재벌남, 후회남, 상처녀, 신파)</span>
-          <span>구성: 총 2권 (완결)</span>
+          <span class="genre-tag lang-ko">현대물 / 로맨스 (선결혼후연애, 계약결혼, 재벌남, 후회남, 상처녀, 신파)</span>
+          <span class="genre-tag lang-en">Modern / Romance (Marriage First Love Later, Contract Marriage, Chaebol ML, Regretful ML, Scarred FL, Melodrama)</span>
+          <span class="lang-ko">구성: 총 2권 (완결)</span>
+          <span class="lang-en">Volumes: 2 Volumes (Completed)</span>
         </div>
       </div>
     </div>
-    <div class="synopsis">
+    <div class="synopsis lang-ko">
       하공그룹 막내아들이자 냉정한 엘리트 사도혁과, 불우한 환경 속에서도 그를 짝사랑해 온 아내 채은수의 이야기다. 무심하고 건조한 결혼 생활에 지쳐 떠나려는 아내와, 그녀가 떠난 후에야 비로소 제 마음을 깨닫고 허둥대며 후회하는 남자의 절절하고도 애잔한 로맨스.
     </div>
-    <a href="https://series.naver.com/novel/detail.series?productNo=10017850" target="_blank" class="btn-link">네이버 시리즈에서 보기</a>
+    <div class="synopsis lang-en">
+      The story of Sa Do-hyeok, a cold elite and youngest son of the Hagong Group, and his wife Chae Eun-soo, who secretly loved him despite her unfortunate upbringing. Exhausted by a dry, indifferent marriage, the wife tries to leave, while the husband belatedly realizes his true feelings only after her departure, spiraling into desperate regret in this sorrowful romance.
+    </div>
+    <a href="https://series.naver.com/novel/detail.series?productNo=10017850" target="_blank" class="btn-link lang-ko">네이버 시리즈에서 보기</a>
+    <a href="https://series.naver.com/novel/detail.series?productNo=10017850" target="_blank" class="btn-link lang-en">View on Naver Series</a>
   </div>
 
   <!-- 24번 -->
@@ -576,18 +778,26 @@
     <div class="card-top">
       <img src="5744041.jpg" class="cover-img" alt="이중 비서">
       <div class="content-body">
-        <h2 class="title">24. 이중 비서</h2>
-        <span class="author">작가: 하빕티</span>
+        <h2 class="title lang-ko">24. 이중 비서</h2>
+        <h2 class="title lang-en">24. Double Secretary</h2>
+        <span class="author lang-ko">작가: 하빕티</span>
+        <span class="author lang-en">Author: Habibti</span>
         <div class="meta-line">
-          <span class="genre-tag">현대물 / 로맨스 (복수, 갑을관계)</span>
-          <span>구성: 총 2권 (완결)</span>
+          <span class="genre-tag lang-ko">현대물 / 로맨스 (복수, 갑을관계)</span>
+          <span class="genre-tag lang-en">Modern / Romance (Revenge, Master-Servant / Power Dynamics)</span>
+          <span class="lang-ko">구성: 총 2권 (완결)</span>
+          <span class="lang-en">Volumes: 2 Volumes (Completed)</span>
         </div>
       </div>
     </div>
-    <div class="synopsis">
+    <div class="synopsis lang-ko">
       억울하게 수감된 아버지의 무죄를 밝히려는 유민은 조력자의 제안을 받아 상사인 준서를 유혹하고 그의 선자리를 방해하라는 명령을 받는다. 그러나 얼마 지나지 않아 준서에게 계략이 발각되고, 준서는 사직서를 내려는 유민에게 자신을 위해 이중 스파이 역할을 계속할 것을 역제안하며 두 사람의 위태로운 협력 관계가 시작된다.
     </div>
-    <a href="https://series.naver.com/novel/detail.series?productNo=9242093" target="_blank" class="btn-link">네이버 시리즈에서 보기</a>
+    <div class="synopsis lang-en">
+      Seeking to prove her falsely imprisoned father's innocence, Yu-min accepts a helper's offer and is ordered to seduce her boss, Jun-seo, and sabotage his blind dates. However, her scheme is soon discovered by Jun-seo. When Yu-min attempts to submit her resignation, Jun-seo counters by proposing that she continue playing the role of a double spy for his benefit, sparking a risky partnership.
+    </div>
+    <a href="https://series.naver.com/novel/detail.series?productNo=9242093" target="_blank" class="btn-link lang-ko">네이버 시리즈에서 보기</a>
+    <a href="https://series.naver.com/novel/detail.series?productNo=9242093" target="_blank" class="btn-link lang-en">View on Naver Series</a>
   </div>
 
   <!-- 25번 -->
@@ -595,18 +805,26 @@
     <div class="card-top">
       <img src="5715192.jpg" class="cover-img" alt="음험한 미식가">
       <div class="content-body">
-        <h2 class="title">25. 음험한 미식가</h2>
-        <span class="author">작가: 바디바</span>
+        <h2 class="title lang-ko">25. 음험한 미식가</h2>
+        <h2 class="title lang-en">25. Sinister Gourmet</h2>
+        <span class="author lang-ko">작가: 바디바</span>
+        <span class="author lang-en">Author: Badiba</span>
         <div class="meta-line">
-          <span class="genre-tag">서양풍 / 판타지 로맨스 (소유욕, 집착남, 계략남)</span>
-          <span>구성: 단권</span>
+          <span class="genre-tag lang-ko">서양풍 / 판타지 로맨스 (소유욕, 집착남, 계략남)</span>
+          <span class="genre-tag lang-en">Western / Fantasy Romance (Possessiveness, Possessive ML, Scheme ML)</span>
+          <span class="lang-ko">구성: 단권</span>
+          <span class="lang-en">Volumes: Single Volume</span>
         </div>
       </div>
     </div>
-    <div class="synopsis">
+    <div class="synopsis lang-ko">
       12년 만에 기나긴 잠에서 깨어난 주인공은 자신이 아끼던 귀여운 애완동물 '바니'가 예전과 완전히 달라져 집착 어린 소유욕을 드러내는 모습을 마주하게 된다. 다정했던 과거의 흔적은 온데간데없이, 낮게 으르렁거리며 자신을 구속하려는 남자의 서늘하고도 음험한 애착에 휩싸이게 되는 위험하고 아찔한 로맨스.
     </div>
-    <a href="https://ridibooks.com/books/5482000076" target="_blank" class="btn-link">리디북스에서 보기</a>
+    <div class="synopsis lang-en">
+      Awakening from a long 12-year slumber, the protagonist finds that her once-cherished, adorable pet 'Barney' has completely changed, exhibiting an obsessive possessiveness. With all traces of his former gentle self gone, she becomes entangled in the chilling and sinister attachment of a man growling low and seeking to restrain her in this dangerous romance.
+    </div>
+    <a href="https://ridibooks.com/books/5482000076" target="_blank" class="btn-link lang-ko">리디북스에서 보기</a>
+    <a href="https://ridibooks.com/books/5482000076" target="_blank" class="btn-link lang-en">View on Ridi Books</a>
   </div>
 
   <!-- 26번 -->
@@ -614,18 +832,26 @@
     <div class="card-top">
       <img src="5482000078_org.jpg" class="cover-img" alt="여왕의 주인(朱印)">
       <div class="content-body">
-        <h2 class="title">26. 여왕의 주인(朱印)</h2>
-        <span class="author">작가: 클람</span>
+        <h2 class="title lang-ko">26. 여왕의 주인(朱印)</h2>
+        <h2 class="title lang-en">26. The Queen's Master (Red Seal)</h2>
+        <span class="author lang-ko">작가: 클람</span>
+        <span class="author lang-en">Author: Kklam</span>
         <div class="meta-line">
-          <span class="genre-tag">동양풍 / 로맨스 (궁정로맨스, 복수, 선결혼후연애)</span>
-          <span>구성: 단권 (완결)</span>
+          <span class="genre-tag lang-ko">동양풍 / 로맨스 (궁정로맨스, 복수, 선결혼후연애)</span>
+          <span class="genre-tag lang-en">Eastern / Romance (Court Romance, Revenge, Marriage First Love Later)</span>
+          <span class="lang-ko">구성: 단권 (완결)</span>
+          <span class="lang-en">Volumes: Single Volume (Completed)</span>
         </div>
       </div>
     </div>
-    <div class="synopsis">
+    <div class="synopsis lang-ko">
       비열한 계략에 휘말려 제국의 공녀로 끌려온 타타르의 공왕 히란야타는 타타르의 생존과 원수를 향한 복수를 위해 은 제국의 젊은 황제 겸에게 황후라는 이름의 개가 되겠다는 파격적인 제안을 던지며 은밀한 손을 잡게 된다.
     </div>
-    <a href="https://ridibooks.com/books/5482000078" target="_blank" class="btn-link">리디북스에서 보기</a>
+    <div class="synopsis lang-en">
+      Entangled in a despicable scheme and dragged away as a princess of the empire, Prince Hiranyata of Tatar secretly joins hands with Gyeom, the young emperor of the Eun Empire. For the survival of Tatar and revenge against his enemy, he makes an unconventional offer to become the emperor's dog under the title of Empress.
+    </div>
+    <a href="https://ridibooks.com/books/5482000078" target="_blank" class="btn-link lang-ko">리디북스에서 보기</a>
+    <a href="https://ridibooks.com/books/5482000078" target="_blank" class="btn-link lang-en">View on Ridi Books</a>
   </div>
 
   <!-- 27번 -->
@@ -633,18 +859,26 @@
     <div class="card-top">
       <img src="5779610.jpg" class="cover-img" alt="할래요, 그거? -동양풍 로맨스 편-">
       <div class="content-body">
-        <h2 class="title">27. 할래요, 그거? -동양풍 로맨스 편-</h2>
-        <span class="author">작가: 이도혜, 놀고양</span>
+        <h2 class="title lang-ko">27. 할래요, 그거? -동양풍 로맨스 편-</h2>
+        <h2 class="title lang-en">27. Shall We Do That? -Eastern Romance Edition-</h2>
+        <span class="author lang-ko">작가: 이도혜, 놀고양</span>
+        <span class="author lang-en">Author: Lee Do-hye, Nol Goyang</span>
         <div class="meta-line">
-          <span class="genre-tag">동양풍 / 로맨스 (단편 연작, 궁정로맨스, 집착남, 순정남)</span>
-          <span>구성: 총 1권 (완결)</span>
+          <span class="genre-tag lang-ko">동양풍 / 로맨스 (단편 연작, 궁정로맨스, 집착남, 순정남)</span>
+          <span class="genre-tag lang-en">Eastern / Romance (Short Story Anthology, Court Romance, Possessive ML, Devoted ML)</span>
+          <span class="lang-ko">구성: 총 1권 (완결)</span>
+          <span class="lang-en">Volumes: 1 Volume (Completed)</span>
         </div>
       </div>
     </div>
-    <div class="synopsis">
+    <div class="synopsis lang-ko">
       신분과 지위를 넘어선 은밀하고 농염한 사랑을 그린 연작 시리즈의 첫 번째 작품. 관비가 된 혜연을 속여 데려온 남자의 숨겨진 정체를 다룬 &lt;팔푼이 서방님&gt;과, 첫 시침 시녀였던 아희를 잊지 못해 찾아 나선 순정파 황제와 낮져밤이 시녀의 이야기를 담은 &lt;황제의 은밀한 교육&gt; 두 가지 매혹적인 단편으로 구성된 동양풍 로맨스.
     </div>
-    <a href="https://ridibooks.com/books/5482001566" target="_blank" class="btn-link">리디북스에서 보기</a>
+    <div class="synopsis lang-en">
+      The first volume in a series depicting secret, sensual love transcending status and position. An Eastern romance comprising two alluring short stories: &lt;Foolish Husband&gt;, about the hidden identity of a man who tricks and takes away Hye-yeon after she becomes an official slave, and &lt;The Emperor's Secret Education&gt;, following a devoted emperor who searches for his first attendant maid Ah-hui, and a maid who is meek by day but dominant by night.
+    </div>
+    <a href="https://ridibooks.com/books/5482001566" target="_blank" class="btn-link lang-ko">리디북스에서 보기</a>
+    <a href="https://ridibooks.com/books/5482001566" target="_blank" class="btn-link lang-en">View on Ridi Books</a>
   </div>
 
   <!-- 28번 -->
@@ -652,18 +886,26 @@
     <div class="card-top">
       <img src="5779607.jpg" class="cover-img" alt="할래요, 그거? -현대 로맨스 편-">
       <div class="content-body">
-        <h2 class="title">28. 할래요, 그거? -현대 로맨스 편-</h2>
-        <span class="author">작가: 에필리아, 류레아</span>
+        <h2 class="title lang-ko">28. 할래요, 그거? -현대 로맨스 편-</h2>
+        <h2 class="title lang-en">28. Shall We Do That? -Modern Romance Edition-</h2>
+        <span class="author lang-ko">작가: 에필리아, 류레아</span>
+        <span class="author lang-en">Author: Ephelia, Ryu Rea</span>
         <div class="meta-line">
-          <span class="genre-tag">현대물 / 로맨스 (단편 연작, 재회물, 후회남, 직진남)</span>
-          <span>구성: 총 1권 (완결)</span>
+          <span class="genre-tag lang-ko">현대물 / 로맨스 (단편 연작, 재회물, 후회남, 직진남)</span>
+          <span class="genre-tag lang-en">Modern / Romance (Short Story Anthology, Reunion, Regretful ML, Straightforward ML)</span>
+          <span class="lang-ko">구성: 총 1권 (완결)</span>
+          <span class="lang-en">Volumes: 1 Volume (Completed)</span>
         </div>
       </div>
     </div>
-    <div class="synopsis">
+    <div class="synopsis lang-ko">
       신분과 지위를 넘어선 은밀하고 농염한 사랑을 그린 연작 시리즈의 마지막 작품. 오랜 짝사랑 상대였던 선배 지훈으로부터 파격적인 제안을 받는 혜정의 이야기를 담은 &lt;감정의 궤도&gt;와, 10년 전 매몰차게 떠났던 전 남자친구가 병원 이사장으로 재회해 다가오는 서이의 이야기를 그린 &lt;다시 만난 너는&gt; 두 가지 매혹적인 단편으로 구성된 현대 로맨스.
     </div>
-    <a href="https://ridibooks.com/books/5482001564" target="_blank" class="btn-link">리디북스에서 보기</a>
+    <div class="synopsis lang-en">
+      The final installment in a series depicting secret, sensual love transcending status and position. A modern romance featuring two captivating stories: &lt;Orbit of Emotions&gt;, where Hye-jung receives an unconventional offer from her long-time crush, Ji-hoon, and &lt;Meeting You Again&gt;, where Seo-i reunites with her ex-boyfriend who harshly left 10 years ago, now returning as the hospital's chairman.
+    </div>
+    <a href="https://ridibooks.com/books/5482001564" target="_blank" class="btn-link lang-ko">리디북스에서 보기</a>
+    <a href="https://ridibooks.com/books/5482001564" target="_blank" class="btn-link lang-en">View on Ridi Books</a>
   </div>
 
   <!-- 29번 -->
@@ -671,27 +913,42 @@
     <div class="card-top">
       <img src="5779604.jpg" class="cover-img" alt="할래요, 그거? -로맨스 판타지 편-">
       <div class="content-body">
-        <h2 class="title">29. 할래요, 그거? -로맨스 판타지 편-</h2>
-        <span class="author">작가: 리체르카레, 쑥국</span>
+        <h2 class="title lang-ko">29. 할래요, 그거? -로맨스 판타지 편-</h2>
+        <h2 class="title lang-en">29. Shall We Do That? -Romance Fantasy Edition-</h2>
+        <span class="author lang-ko">작가: 리체르카레, 쑥국</span>
+        <span class="author lang-en">Author: Ricercare, Ssukguk</span>
         <div class="meta-line">
-          <span class="genre-tag">로맨스 판타지 / 판타지 로맨스 (단편 연작, 궁정로맨스, 직진녀, 3P 요소 포함)</span>
-          <span>구성: 총 1권 (완결)</span>
+          <span class="genre-tag lang-ko">로맨스 판타지 / 판타지 로맨스 (단편 연작, 궁정로맨스, 직진녀, 3P 요소 포함)</span>
+          <span class="genre-tag lang-en">Romance Fantasy / Fantasy Romance (Short Story Anthology, Court Romance, Bold FL, Includes 3P Elements)</span>
+          <span class="lang-ko">구성: 총 1권 (완결)</span>
+          <span class="lang-en">Volumes: 1 Volume (Completed)</span>
         </div>
       </div>
     </div>
-    <div class="synopsis">
+    <div class="synopsis lang-ko">
       신분과 지위를 넘어선 은밀하고 농염한 사랑을 그린 연작 시리즈의 두 번째 작품. 여성 공포증(?)이 있는 완벽한 젊은 황제의 비밀을 파헤치기 위해 자신의 몸을 내던지는 비서관 리디아의 이야기를 다룬 &lt;그 황제의 은밀한 사정&gt;과, 무너진 용병단을 다시 일으킨 단장 카일로를 향한 적극적인 직진 로맨스이자 3P 키워드가 포함된 &lt;에클레의 모르는 용병 공략집&gt; 두 가지 매혹적인 단편으로 구성된 판타지 로맨스.
     </div>
-    <a href="https://ridibooks.com/books/5482001562" target="_blank" class="btn-link">리디북스에서 보기</a>
+    <div class="synopsis lang-en">
+      The second volume in a series depicting secret, sensual love transcending status and position. A fantasy romance featuring two alluring stories: &lt;The Emperor's Secret Circumstance&gt;, about secretary Lydia who risks everything to uncover the secret of the perfect young emperor suffering from gynophobia (?), and &lt;Ecle's Unknown Mercenary Strategy Guide&gt;, a bold romance featuring 3P tropes centered on Kylo, who rebuilt a fallen mercenary band.
+    </div>
+    <a href="https://ridibooks.com/books/5482001562" target="_blank" class="btn-link lang-ko">리디북스에서 보기</a>
+    <a href="https://ridibooks.com/books/5482001562" target="_blank" class="btn-link lang-en">View on Ridi Books</a>
   </div>
 
   <!-- 푸터 / 감사 인사 카드 -->
   <div class="card footer-card">
     <img src="Logo.png" alt="Pickybook Logo" style="max-width: 220px; width: 100%; height: auto; object-fit: contain;">
-    <p style="font-size: 18px; font-weight: 700; color: #1a1a1a;">감사합니다.</p>
+    <p class="lang-ko" style="font-size: 18px; font-weight: 700; color: #1a1a1a;">감사합니다.</p>
+    <p class="lang-en" style="font-size: 18px; font-weight: 700; color: #1a1a1a;">Thank you!</p>
   </div>
 
 </div>
+
+<script>
+  function toggleLanguage() {
+    document.body.classList.toggle('en-mode');
+  }
+</script>
 
 </body>
 </html>
