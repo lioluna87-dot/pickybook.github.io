@@ -3,134 +3,38 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>다설 웹소설 전체 라인업 / Daseol Web Novel Lineup</title>
+<title>다설 웹소설 라인업 / Daseol Web Novel Lineup</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { 
-    font-family: 'Noto Sans KR', -apple-system, sans-serif; 
-    background-color: #f4f5f7; 
-    color: #333; 
-    line-height: 1.6; 
-    padding: 40px 15px; 
-  }
+  body { font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background-color: #f4f5f7; color: #333; line-height: 1.6; padding: 20px 15px 40px; }
   
-  .header-title {
-    text-align: center;
-    font-size: 28px;
-    font-weight: 800;
-    color: #111827;
-    margin-bottom: 30px;
-  }
+  .header-bar { max-width: 1200px; margin: 0 auto 24px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #e2e8f0; padding-bottom: 16px; }
+  .header-title { font-size: 22px; font-weight: 800; color: #1e293b; }
+  .lang-btn { background: #2563eb; color: #ffffff; border: none; padding: 8px 16px; border-radius: 20px; font-size: 13.5px; font-weight: 700; cursor: pointer; transition: background 0.2s, transform 0.1s; box-shadow: 0 2px 5px rgba(37,99,235,0.2); }
+  .lang-btn:hover { background: #1d4ed8; }
+  .lang-btn:active { transform: scale(0.97); }
 
-  .container { 
-    max-width: 1200px; 
-    margin: 0 auto; 
-    display: grid; 
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 20px; 
-  }
-
-  .card { 
-    background: #ffffff; 
-    border-radius: 12px; 
-    box-shadow: 0 4px 12px rgba(0,0,0,0.06); 
-    padding: 20px; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: space-between; 
-    border: 1px solid #eaedf1; 
-  }
-
+  .container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .card { background: #ffffff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); padding: 20px; position: relative; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #eaedf1; }
+  .badge-new { position: absolute; top: 16px; left: 16px; background: #e53e3e; color: #fff; font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 4px; z-index: 10; }
   .card-top { display: flex; gap: 16px; margin-bottom: 16px; }
-  .cover-img { 
-    width: 100px; 
-    height: 145px; 
-    object-fit: cover; 
-    border-radius: 8px; 
-    flex-shrink: 0; 
-    background-color: #eee; 
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1); 
-  }
-
+  .cover-img { width: 100px; height: 145px; object-fit: cover; border-radius: 8px; flex-shrink: 0; background-color: #eee; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
   .content-body { flex: 1; display: flex; flex-direction: column; gap: 6px; justify-content: center; }
   .title { font-size: 17px; font-weight: 700; color: #1a1a1a; line-height: 1.3; }
   .author { font-size: 13.5px; color: #666; font-weight: 500; }
   .meta-line { display: flex; flex-direction: column; gap: 4px; font-size: 12.5px; color: #777; margin-top: 4px; }
   .genre-tag { font-size: 11px; color: #1e88e5; background: #e3f2fd; padding: 2px 6px; border-radius: 4px; font-weight: 600; align-self: flex-start; }
-  
-  .note { font-size: 11.5px; color: #d97706; background: #fffbe3; padding: 4px 8px; border-radius: 4px; font-weight: 600; margin-bottom: 12px; }
   .synopsis { font-size: 13px; color: #444; background: #f8f9fa; padding: 10px 12px; border-radius: 8px; border-left: 3px solid #cbd5e1; margin-bottom: 16px; flex-grow: 1; }
-  
-  .btn-link { 
-    display: block; 
-    text-align: center; 
-    background: #1f2937; 
-    color: #ffffff; 
-    text-decoration: none; 
-    padding: 10px 0; 
-    border-radius: 8px; 
-    font-size: 13.5px; 
-    font-weight: 600; 
-    transition: background 0.2s; 
-  }
+  .note { font-size: 12px; color: #d97706; font-weight: 600; }
+  .btn-link { display: block; text-align: center; background: #1f2937; color: #ffffff; text-decoration: none; padding: 10px 0; border-radius: 8px; font-size: 13.5px; font-weight: 600; transition: background 0.2s; }
   .btn-link:hover { background: #111827; }
 
-  .footer-card {
-    grid-column: span 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 16px;
-    padding: 40px 20px;
-    margin-top: 10px;
-  }
-
-  /* 언어 전환 버튼 스타일 */
-  .lang-switch-wrapper {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
-  }
-  .lang-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    background: #ffffff;
-    color: #1f2937;
-    border: 1px solid #d1d5db;
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-size: 13px;
-    font-weight: 700;
-    cursor: pointer;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    transition: all 0.2s ease;
-  }
-  .lang-btn:hover {
-    background: #1f2937;
-    color: #ffffff;
-    border-color: #1f2937;
-  }
-
-  /* 언어 숨김 제어 */
   .lang-en { display: none; }
-  body.en-mode .lang-ko { display: none; }
-  body.en-mode .lang-en { display: inline; }
-  body.en-mode div.lang-en, 
-  body.en-mode p.lang-en, 
-  body.en-mode span.lang-en, 
-  body.en-mode h1.lang-en, 
-  body.en-mode h2.lang-en, 
-  body.en-mode a.lang-en { display: block; }
-  body.en-mode span.genre-tag.lang-en { display: inline-block; }
 
   @media (max-width: 768px) {
     .container { grid-template-columns: 1fr; }
-    .footer-card { grid-column: span 1; }
-    .lang-switch-wrapper { top: 12px; right: 12px; }
+    .header-bar { flex-direction: row; align-items: center; }
+    .header-title { font-size: 18px; }
   }
 </style>
 </head>
